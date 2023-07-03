@@ -1,0 +1,9 @@
+{
+    "include": ["src", "tests"],
+    "compilerOptions": {
+        "lib": ["es2021", "dom"],
+        "target": "es2015",
+        "strict": true,
+        "noImplicitAny": true
+    }
+}
