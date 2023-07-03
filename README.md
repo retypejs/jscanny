@@ -1,6 +1,6 @@
 # jscanny
 
-![](https://badgen.net/github/release/retypejs/jscanny)
+[![latest release](https://badgen.net/github/release/retypejs/jscanny?color=green)](https://github.com/retypejs/jscanny/releases) [![latest tag](https://badgen.net/github/tag/retypejs/jscanny)](https://github.com/retypejs/jscanny/tags) [![license](https://badgen.net/github/license/retypejs/jscanny)](https://github.com/retypejs/jscanny/blob/main/LICENSE)
 
 Painless string scanning.
 
