@@ -18,18 +18,30 @@ npm install @retypejs/jscanny
 
 ## Usage
 
-`jscanny` is published as a CommonJS (CJS) module (that you can `require()`) as well as an ECMAScript module (ESM) (that you can `import`).
+`jscanny` is published as a CommonJS (CJS) module that you can `require()` as well as an ECMAScript module (ESM) that you can `import`.
+
+If you happen to encounter a "Could not find a declaration file for module '@retypejs/jscanny'. '/path/to/node_modules/@retypejs/jscanny/dist/cjs/src/index.js' implicitly has an 'any' type." error, try adding `"moduleResolution": "nodenext"` in the `tsconfig.json` file of your TypeScript project like so:
+
+```json
+{
+    "compilerOptions": {
+        "moduleResolution": "nodenext"
+    }
+}
+```
 
 ### CommonJS
 
 ```js
-const { Scanner, Char, None, Some, Option } = require('@retypejs/jscanny');
+const { Scanner, Char } = require('@retypejs/jscanny');
+const { None, Some, Option } = require('@retypejs/jscanny');
 ```
 
 ### ESM
 
 ```js
-import { Scanner, Char, None, Some, Option } from '@retypejs/jscanny';
+import { Scanner, Char } from '@retypejs/jscanny';
+import { None, Some, Option } from '@retypejs/jscanny';
 ```
 
 ## Example
